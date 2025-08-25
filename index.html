@@ -5,76 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="frame">
-        <!-- for tablet -->
-         <div class="menu">
-            <div class="logo">
-                <a href="#"><img src="images/burger.svg" alt=""></a>
-                <img src="images/divider.svg" alt="">
-                <a href="#"><img src="images/logo.svg" alt=""></a>
+    <main>
+        <!-- for mobile -->
+         <menu class="menu">
+            <div class="menu__group">
+                <button><img src="images/burger.svg" alt="hamburger_menu_logo"></button>
+                <img src="images/divider.svg" alt="divider">
+                <button><img src="images/logo.svg" alt="logo"></button>
             </div>
-            <div class="quick_links">
-                <a href="#"><img src="images/call.svg" alt=""></a>
-                <a href="#"><img src="images/chat.svg" alt=""></a>
-                <a href="#"><img src="images/profile.svg" alt=""></a>
-                <img src="images/divider.svg" alt="">
-                <a href="#"><img src="images/repair.svg" alt=""></a>
-                <a href="#"><img src="images/checkstatus.svg" alt=""></a>
+            <div class="menu__group">
+                <button class="menu__btn menu__btn--hide-mobile"><img src="images/call.svg" alt="call_button"></button>
+                <button class="menu__btn menu__btn--hide-mobile"><img src="images/chat.svg" alt="chat_button"></button>
+                <button class="menu__btn menu__btn--hide-mobile"><img src="images/profile.svg" alt="profile_button"></button>
+                <img src="images/divider.svg" alt="divider">
+                <button><img src="images/repair.svg" alt="repair_button"></button>
+                <button><img src="images/checkstatus.svg" alt="checkstatus_button"></button>
             </div>
-         </div>
+        </menu>
         <!-- header -->
-        <div class="header">
-            <div class="title">
-                Services
+        <header class="header">
+            <h1 class="header__title">Services</h1>
+            <div class="header__actions">
+                <button class="header__action">Leave a request<img src="images/repair.svg" alt=""></button>
+                <button class="header__action">Search<img src="images/checkstatus.svg" alt=""></button>
             </div>
-            <div class="actions">
-                <a href="#" class="action"><img src="images/repair.svg" alt="">Leave a request</a>
-                <a href="#" class="action"><img src="images/checkstatus.svg" alt="">Search</a>
-            </div>
-        </div>
-        <!-- navigation -->
-        <div class="links">
-            <a href="#">Repaired brands</a> 
-            <a href="#">Repairable devices</a> 
-            <a href="#">Prices for services</a> 
-            <a href="#">Service center addresses</a>
-            <a href="#">Special prices</a>
-            <a href="#">Reviews</a>
-        </div>
+        </header>
+        <!-- navigation links -->
+        <nav class="nav">
+            <a class="nav__link" href="#">Repaired brands</a> 
+            <a class="nav__link" href="#">Repairable devices</a> 
+            <a class="nav__link" href="#">Prices for services</a> 
+            <a class="nav__link" href="#">Service center addresses</a>
+            <a class="nav__link" href="#">Special prices</a>
+            <a class="nav__link" href="#">Reviews</a>
+        </nav>
         <!-- content -->
-        <div class="content">
-           <div class="descritpion_text">
-                <p>
-                    We are an authorized service center for repairing Dell equipment. Only here you can repair your
-                    Dell laptop with the official manufacturer’s warranty.
-                </p>
-                <div class="mobile_text">
-                    We are an authorized service center for repairing Dell equipment. Only here you can repair your
-                    Dell laptop with the official manufacturer’s warranty....
-                </div>
-                <p>
-                    We have been successfully operating since 1992 and have earned a reputation as a reliable partner, 
-                    which is confirmed by a large number of regular customers. We are proud that people turn to us on recommendations and,
-                     in turn, recommend us to their relatives and friends.
-                </p>
-                <p class="table_text">
-                    We have been successfully operating since 1992 and have earned a reputation as a reliable partner, 
-                    which is confirmed by a large number of regular customers. We are proud that people turn to us on recommendations and ...
-                </p>
-                <a href="#" class="readmore"><img src="images/expand.svg" alt=""> Read more</a>
+        <section class="content">
+           <div class="content_text">
+            <p>
+                We are an authorized service center for repairing Dell equipment. Only here you can repair your
+                Dell laptop with the official manufacturer’s warranty .<span class="content__text--display-for-mobile">..</span></p>
+            <p>
+                <span class="content__text--hide-for-mobile">We have been successfully operating since 1992 and have earned a reputation as a reliable partner<span class="content__text--hide-for-tablet">,which is confirmed by a large number of regular customers. We are proud that people turn to us on recommendations and,
+                in turn, recommend us to their relatives and friends.</span> </span>
+
+            </p>
+            <button  class="readmore__btn"><img src="images/expand.svg" alt="">Read more</button>
            </div>
            <div class="photo">
                 <img src="images/photo.svg" alt="CPS Service Sign">
     
            </div>
-            
-
-        </div>
+        </section>
     </main>
 </body>
 </html>
