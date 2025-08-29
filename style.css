@@ -195,6 +195,9 @@ button{
         display: none;
     }
 
+    .header__actions{
+        display: none;
+    }
     .header__title{
         font-size: 28px;
     }
