@@ -3,8 +3,18 @@
         to { opacity: 1; }
 }
 
+@font-face {
+  font-family: 'TT Lakes Neue';
+  src: url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff2') format('woff2'),
+       url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff') format('woff'),
+       url('fonts/TT_Lakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TT Lakes Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: #f8f8f8;
@@ -25,6 +35,7 @@ body{
 }
 
 .header__title{
+    /* font-family: 'TT Lakes Neue', sans-serif; */
     font-size:26px;
     font-weight:700;
     letter-spacing:.2px;
@@ -38,6 +49,7 @@ body{
     gap:28px;
     flex-wrap:wrap;
     margin-right: 20px;
+    font-family: 'TT Lakes Neue', sans-serif;
 }
 
 .header__action{
@@ -47,6 +59,7 @@ body{
     color:#374151;
     font-weight:700;
     text-decoration:none;
+    font-family: 'TT Lakes Neue', sans-serif;
 }
 
 .nav{
@@ -98,7 +111,7 @@ body{
 }
 
 .readmore__btn{
-    font-family: Roboto,sans-serif;
+    font-family: 'TT Lakes Neue', sans-serif;
     font-size: 16px;
     display:flex;
     align-items:center;
@@ -114,7 +127,7 @@ button{
 }
 
 /* for tablet */
-@media(min-width: 768px) and (max-width:1120px){
+@media (min-width: 768px) and (max-width:1024px){
 
     .header__actions{
         display: none;
@@ -128,7 +141,9 @@ button{
         background-color: white;
         animation: fadeIn 1s ease forwards;
     }
-
+    .diveder__mobile{
+        display: none;
+    }
     .menu__group{
         display: flex;
         align-items: center;
@@ -171,7 +186,7 @@ button{
 
 
 /* for mobile */
-@media (min-width:320px) and (max-width:767px){
+@media (max-width:768px){
 
     .body{
         width: 320px;
@@ -185,11 +200,20 @@ button{
         display: flex;
         width: 100vw;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: white;
         animation: fadeIn 1s ease forwards;
         box-sizing: border-box;
         padding: 0px;
+    }
+    .menu__group{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 12px 0 0;
+    }
+    .diveder__tablet{
+        display: none;
     }
     .menu__btn--hide-mobile{
         display: none;
