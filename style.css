@@ -208,13 +208,14 @@ button{
         background-color: white;
         animation: fadeIn 1s ease forwards;
         box-sizing: border-box;
-        padding: 10px 15px;
+        padding: 10px 25px;
     }
     .menu__group{
         display: flex;
         align-items: center;
         gap: 10px;
         padding: 0px 12px 0 0;
+        /* padding:10px 25px; */
     }
     .diveder__tablet{
         display: none;
