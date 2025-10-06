@@ -5,8 +5,9 @@
 
 @font-face {
   font-family: 'TT Lakes Neue';
-  src: url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff2') format('woff2'),
-       url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff') format('woff'),
+   src: 
+   /* url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff2') format('woff2'),
+       url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff') format('woff'), */
        url('fonts/TT_Lakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -18,26 +19,31 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: #f8f8f8;
+    /* background-color: red; */
    
 }
 
 .menu{
     display: none;
     animation: fadeOut 1s ease backwards;
+    margin-top: 0px;
+    padding-bottom: 0;
 }
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0px 10px;
+    padding-top: 10px;
+    margin-top: -17px;
     box-sizing: border-box;
+    /* background-color: yellow; */
 }
 
 .header__title{
     /* font-family: 'TT Lakes Neue', sans-serif; */
-    font-size:26px;
-    font-weight:700;
+    font-size:28px;
+    font-weight:bold;
     letter-spacing:.2px;
     padding-left: 10px;
     border-left: 5px solid #41f6d7;
@@ -66,7 +72,7 @@ body{
     display:flex;
     flex-wrap: wrap;
     gap:28px;
-    padding:20px 0 20px;
+    padding:0 0 0 32px;
     font-size:16px;
     color:#374151;
     font-weight:400;
@@ -78,12 +84,12 @@ body{
     color:inherit;
     text-decoration:none;
     box-sizing: border-box;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     white-space: nowrap;
 }
 
 .nav__link:hover{
-    border:1px solid #41f6d7;
+    border:2px solid #41f6d7;
     background-color: white; 
     border-radius: 5px;
     box-shadow:0 1px 0 rgba(0,0,0,.02);
@@ -191,8 +197,6 @@ button{
     .body{
         width: 320px;
         height: auto;
-        padding: 0px;
-        margin: 0px;
         overflow: hidden;
         box-sizing: border-box;
     }
@@ -204,7 +208,7 @@ button{
         background-color: white;
         animation: fadeIn 1s ease forwards;
         box-sizing: border-box;
-        padding: 0px;
+        padding: 10px 15px;
     }
     .menu__group{
         display: flex;
@@ -276,7 +280,7 @@ button{
     .photo img{
         width: 100vw;
         margin-left: -19px;
-        border-radius: 0%;
+        border-radius: 0px;
         
     }
 
